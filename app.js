@@ -25,9 +25,9 @@ main().then(()=>{
     console.log(err);
 });
 
-// app.get("/", (req, res)=>{
-//     res.send("HI I am Root");
-// });
+app.get("/", (req, res)=>{
+   res.render("home.ejs");
+});
 
 app.get("/home", (req,res)=>{
     res.render("home.ejs");
